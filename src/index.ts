@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import { PLAYLISTS } from './data/playlists';
 import { PLAYLIST_SONGS } from './data/playlistSongs';
 import { SONGS } from './data/songs';
@@ -10,6 +11,7 @@ const RESET = '\x1b[0m';
 const PORT = process.env.PORT || DEFAULT_PORT;
 
 app.use(express.json());
+app.use(cors())
 
 app.get('/', (req, res) => {
   res.json({ message: 'Hello, World!' });
