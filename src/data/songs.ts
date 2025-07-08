@@ -1,4 +1,11 @@
-export const SONGS = [
+export interface Song {
+  id: number;
+  title: string;
+  artist: string;
+  album: string;
+}
+
+export const SONGS: Song[] = [
   { id: 1, title: 'Song One', artist: 'Artist A', album: 'Album X' },
   { id: 2, title: 'Song Two', artist: 'Artist B', album: 'Album Y' },
   { id: 3, title: 'Song Three', artist: 'Artist C', album: 'Album Z' },

@@ -1,4 +1,9 @@
-export const PLAYLIST_SONGS = [
+export interface PlaylistSong {
+  id: number;
+  songIds: number[];
+}
+
+export const PLAYLIST_SONGS: PlaylistSong[] = [
   { id: 1, songIds: [1, 5, 3] },
   { id: 2, songIds: [1, 8, 11] },
   { id: 3, songIds: [3, 4, 7] },

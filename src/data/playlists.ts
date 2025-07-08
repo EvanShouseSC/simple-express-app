@@ -1,4 +1,10 @@
-export const PLAYLISTS = [
+export interface Playlist {
+  id: number;
+  name: string;
+  author: string;
+}
+
+export const PLAYLISTS: Playlist[] = [
   { id: 1, name: 'Chill Vibes', author: 'User' },
   { id: 2, name: 'Workout Hits', author: 'User' },
   { id: 3, name: 'Top Hits', author: 'User' },
